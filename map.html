@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3aff0626fd031f7b70450425df92de9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3aff0626fd031f7b70450425df92de9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a3aff0626fd031f7b70450425df92de9 = L.map(
+                "map_a3aff0626fd031f7b70450425df92de9",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7c776c544ca30072a6482df232761c68 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7c776c544ca30072a6482df232761c68.addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var marker_ef6593ce398069794566b71e5c6157e9 = L.marker(
+                [37.0902, -95.7129],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_bba2ff9792e14ccc792f3ba1a5b98990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef6593ce398069794566b71e5c6157e9.setIcon(icon_bba2ff9792e14ccc792f3ba1a5b98990);
+        
+    
+        var popup_ad0b0744ddda8f7227829410d879ec2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cde85db9c39d5e4034f4639d900e0ad5 = $(`<div id="html_cde85db9c39d5e4034f4639d900e0ad5" style="width: 100.0%; height: 100.0%;">Central Park (Type: greenest - Area: 843 acres)</div>`)[0];
+                popup_ad0b0744ddda8f7227829410d879ec2b.setContent(html_cde85db9c39d5e4034f4639d900e0ad5);
+            
+        
+
+        marker_ef6593ce398069794566b71e5c6157e9.bindPopup(popup_ad0b0744ddda8f7227829410d879ec2b)
+        ;
+
+        
+    
+    
+            var marker_978e2bef73151974a31179c2214136a4 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_38e6061c0e30711e3900f51ef92859e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_978e2bef73151974a31179c2214136a4.setIcon(icon_38e6061c0e30711e3900f51ef92859e1);
+        
+    
+        var popup_b04c61b77a2dae8428e992db8ed64bea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a63f119b780636aee392ec182550cf = $(`<div id="html_05a63f119b780636aee392ec182550cf" style="width: 100.0%; height: 100.0%;">Death Valley (Type: hottest - Area: 5000 acres)</div>`)[0];
+                popup_b04c61b77a2dae8428e992db8ed64bea.setContent(html_05a63f119b780636aee392ec182550cf);
+            
+        
+
+        marker_978e2bef73151974a31179c2214136a4.bindPopup(popup_b04c61b77a2dae8428e992db8ed64bea)
+        ;
+
+        
+    
+    
+            var marker_13632de17c1fbae7f549cd017f44a5ae = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_ed3195d8c5edce4e8234d7b7128eafeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13632de17c1fbae7f549cd017f44a5ae.setIcon(icon_ed3195d8c5edce4e8234d7b7128eafeb);
+        
+    
+        var popup_a00e674379554a522b8fa51dfac2fb29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d9d5fed416cac25b12c0aeeb2b26358 = $(`<div id="html_4d9d5fed416cac25b12c0aeeb2b26358" style="width: 100.0%; height: 100.0%;">Antarctica (Type: coldest - Area: 14000000 acres)</div>`)[0];
+                popup_a00e674379554a522b8fa51dfac2fb29.setContent(html_4d9d5fed416cac25b12c0aeeb2b26358);
+            
+        
+
+        marker_13632de17c1fbae7f549cd017f44a5ae.bindPopup(popup_a00e674379554a522b8fa51dfac2fb29)
+        ;
+
+        
+    
+    
+            var marker_710277a4a6b88e62f84e9da6b6219637 = L.marker(
+                [40.78509, -73.96828],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_a696180741e83e8fa4b6804779789ae6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_710277a4a6b88e62f84e9da6b6219637.setIcon(icon_a696180741e83e8fa4b6804779789ae6);
+        
+    
+        var popup_d20713e1488905feffc2e79a79e61435 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1911c16566dbe4eb2b459eac124b77a7 = $(`<div id="html_1911c16566dbe4eb2b459eac124b77a7" style="width: 100.0%; height: 100.0%;">Sahara Desert (Type: driest - Area: 9200000 acres)</div>`)[0];
+                popup_d20713e1488905feffc2e79a79e61435.setContent(html_1911c16566dbe4eb2b459eac124b77a7);
+            
+        
+
+        marker_710277a4a6b88e62f84e9da6b6219637.bindPopup(popup_d20713e1488905feffc2e79a79e61435)
+        ;
+
+        
+    
+    
+            var marker_26656e5836b28b5a8481bb1f4bd2e2eb = L.marker(
+                [56.1304, -106.3468],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_fc6bf03753645f2dc1031c4b1572790f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_26656e5836b28b5a8481bb1f4bd2e2eb.setIcon(icon_fc6bf03753645f2dc1031c4b1572790f);
+        
+    
+        var popup_885aad62fa4d100e7dd4017a6dd3a1fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d84de544c941d5b2670bbb8279f1f33 = $(`<div id="html_8d84de544c941d5b2670bbb8279f1f33" style="width: 100.0%; height: 100.0%;">Amazon Rainforest (Type: wettest - Area: 5500000 acres)</div>`)[0];
+                popup_885aad62fa4d100e7dd4017a6dd3a1fb.setContent(html_8d84de544c941d5b2670bbb8279f1f33);
+            
+        
+
+        marker_26656e5836b28b5a8481bb1f4bd2e2eb.bindPopup(popup_885aad62fa4d100e7dd4017a6dd3a1fb)
+        ;
+
+        
+    
+    
+            var marker_84ce20985ba0612ede3254f709831ee0 = L.marker(
+                [9.145, -40.4897],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_8fbdacff965838d79ee300c6f1771325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84ce20985ba0612ede3254f709831ee0.setIcon(icon_8fbdacff965838d79ee300c6f1771325);
+        
+    
+        var popup_b9a7ac5fa2c042037801c5156e6b74b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d3dfd3688b9955ad475861e435c365e = $(`<div id="html_8d3dfd3688b9955ad475861e435c365e" style="width: 100.0%; height: 100.0%;">Ethiopia (Type: hottest - Area: 1104300 acres)</div>`)[0];
+                popup_b9a7ac5fa2c042037801c5156e6b74b7.setContent(html_8d3dfd3688b9955ad475861e435c365e);
+            
+        
+
+        marker_84ce20985ba0612ede3254f709831ee0.bindPopup(popup_b9a7ac5fa2c042037801c5156e6b74b7)
+        ;
+
+        
+    
+    
+            var marker_e9157ff0c66955ea9070b7361c5cdfdd = L.marker(
+                [71.7069, -42.6043],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_2f4a6b6bde500191ceee537d3d469def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9157ff0c66955ea9070b7361c5cdfdd.setIcon(icon_2f4a6b6bde500191ceee537d3d469def);
+        
+    
+        var popup_6946b97c1ca41363e09a1626a7dd5f62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ff97fdf851d1ea9d36ed76aa91b2002 = $(`<div id="html_0ff97fdf851d1ea9d36ed76aa91b2002" style="width: 100.0%; height: 100.0%;">Greenland (Type: coldest - Area: 2175600 acres)</div>`)[0];
+                popup_6946b97c1ca41363e09a1626a7dd5f62.setContent(html_0ff97fdf851d1ea9d36ed76aa91b2002);
+            
+        
+
+        marker_e9157ff0c66955ea9070b7361c5cdfdd.bindPopup(popup_6946b97c1ca41363e09a1626a7dd5f62)
+        ;
+
+        
+    
+    
+            var marker_89c2caf846e96fe7689eb7fa2ac47157 = L.marker(
+                [64.9631, -19.0208],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_30317a2953186f71e7fa9d5816b3ae6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89c2caf846e96fe7689eb7fa2ac47157.setIcon(icon_30317a2953186f71e7fa9d5816b3ae6a);
+        
+    
+        var popup_dcc2d8c05ebdd21442793b3efc12be08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0ec185b04dcdd5390c2a6ffeada9462 = $(`<div id="html_b0ec185b04dcdd5390c2a6ffeada9462" style="width: 100.0%; height: 100.0%;">Iceland (Type: coldest - Area: 103000 acres)</div>`)[0];
+                popup_dcc2d8c05ebdd21442793b3efc12be08.setContent(html_b0ec185b04dcdd5390c2a6ffeada9462);
+            
+        
+
+        marker_89c2caf846e96fe7689eb7fa2ac47157.bindPopup(popup_dcc2d8c05ebdd21442793b3efc12be08)
+        ;
+
+        
+    
+    
+            var marker_3d1002c6d212b291fc08ab46600ebb83 = L.marker(
+                [4.5709, -74.2973],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_0e11e402c437ca041d04fa9736ebaaa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3d1002c6d212b291fc08ab46600ebb83.setIcon(icon_0e11e402c437ca041d04fa9736ebaaa5);
+        
+    
+        var popup_cd6f4a627cad0612edf58088b00af9aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0765f7bf88770c311e59c67a339dd21 = $(`<div id="html_b0765f7bf88770c311e59c67a339dd21" style="width: 100.0%; height: 100.0%;">Colombia (Type: wettest - Area: 1109500 acres)</div>`)[0];
+                popup_cd6f4a627cad0612edf58088b00af9aa.setContent(html_b0765f7bf88770c311e59c67a339dd21);
+            
+        
+
+        marker_3d1002c6d212b291fc08ab46600ebb83.bindPopup(popup_cd6f4a627cad0612edf58088b00af9aa)
+        ;
+
+        
+    
+    
+            var marker_c90277f0acc664f06080137c08ab485c = L.marker(
+                [8.0, 159.0],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_9e48fb300bc2ae6fe457a676450549cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c90277f0acc664f06080137c08ab485c.setIcon(icon_9e48fb300bc2ae6fe457a676450549cc);
+        
+    
+        var popup_1a735118856ce82f928e9b1a1f3e5837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd8daedf5adf25fa15e91c8e53863981 = $(`<div id="html_bd8daedf5adf25fa15e91c8e53863981" style="width: 100.0%; height: 100.0%;">Solomon Islands (Type: wettest - Area: 27990 acres)</div>`)[0];
+                popup_1a735118856ce82f928e9b1a1f3e5837.setContent(html_bd8daedf5adf25fa15e91c8e53863981);
+            
+        
+
+        marker_c90277f0acc664f06080137c08ab485c.bindPopup(popup_1a735118856ce82f928e9b1a1f3e5837)
+        ;
+
+        
+    
+    
+            var marker_0e66024378ff764d3c695280c2232d40 = L.marker(
+                [6.0, -47.0],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_5ece5bec8a3e228a87c5db6fc691c6f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0e66024378ff764d3c695280c2232d40.setIcon(icon_5ece5bec8a3e228a87c5db6fc691c6f4);
+        
+    
+        var popup_fa48f49377d02cb4428a949c48c02760 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f92ba2e0ce07ad01c2d6edcc8b8e8555 = $(`<div id="html_f92ba2e0ce07ad01c2d6edcc8b8e8555" style="width: 100.0%; height: 100.0%;">Papua New Guinea (Type: wettest - Area: 462840 acres)</div>`)[0];
+                popup_fa48f49377d02cb4428a949c48c02760.setContent(html_f92ba2e0ce07ad01c2d6edcc8b8e8555);
+            
+        
+
+        marker_0e66024378ff764d3c695280c2232d40.bindPopup(popup_fa48f49377d02cb4428a949c48c02760)
+        ;
+
+        
+    
+    
+            var marker_c1419e69431f1471a57f521367a207dd = L.marker(
+                [35.6751, -71.543],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_0be3536bfc2d0313d7f058b19d721406 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c1419e69431f1471a57f521367a207dd.setIcon(icon_0be3536bfc2d0313d7f058b19d721406);
+        
+    
+        var popup_22fc7dc5dbd883cd6fc6e775cb3e947b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67d8679edf10735268848796df498cfe = $(`<div id="html_67d8679edf10735268848796df498cfe" style="width: 100.0%; height: 100.0%;">Chile (Type: driest - Area: 756102 acres)</div>`)[0];
+                popup_22fc7dc5dbd883cd6fc6e775cb3e947b.setContent(html_67d8679edf10735268848796df498cfe);
+            
+        
+
+        marker_c1419e69431f1471a57f521367a207dd.bindPopup(popup_22fc7dc5dbd883cd6fc6e775cb3e947b)
+        ;
+
+        
+    
+    
+            var marker_557a1df2c8e8ffeb156841346282f276 = L.marker(
+                [9.19, -75.0152],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_2f16dad7952d7a0a4c43863e2235355e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_557a1df2c8e8ffeb156841346282f276.setIcon(icon_2f16dad7952d7a0a4c43863e2235355e);
+        
+    
+        var popup_996f1b832e96734b9000988eda1ec295 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d91b552d889f007a2b7155c85813d3cf = $(`<div id="html_d91b552d889f007a2b7155c85813d3cf" style="width: 100.0%; height: 100.0%;">Peru (Type: driest - Area: 1285220 acres)</div>`)[0];
+                popup_996f1b832e96734b9000988eda1ec295.setContent(html_d91b552d889f007a2b7155c85813d3cf);
+            
+        
+
+        marker_557a1df2c8e8ffeb156841346282f276.bindPopup(popup_996f1b832e96734b9000988eda1ec295)
+        ;
+
+        
+    
+    
+            var marker_fb1e6c1d30068bd33d330bb5b8bad592 = L.marker(
+                [14.0583, -108.2772],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_3d0fb8086021bd268038ce04d34f7e29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb1e6c1d30068bd33d330bb5b8bad592.setIcon(icon_3d0fb8086021bd268038ce04d34f7e29);
+        
+    
+        var popup_2686b0bc1901ffff3b59d1ee4ffb53d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f755c48f2f7649edb25fcf8c3783a3d2 = $(`<div id="html_f755c48f2f7649edb25fcf8c3783a3d2" style="width: 100.0%; height: 100.0%;">Vietnam (Type: greenest - Area: 310070 acres)</div>`)[0];
+                popup_2686b0bc1901ffff3b59d1ee4ffb53d9.setContent(html_f755c48f2f7649edb25fcf8c3783a3d2);
+            
+        
+
+        marker_fb1e6c1d30068bd33d330bb5b8bad592.bindPopup(popup_2686b0bc1901ffff3b59d1ee4ffb53d9)
+        ;
+
+        
+    
+    
+            var marker_1fcdccd0e839ce97273b096b7e6a23fc = L.marker(
+                [9.94, -84.1],
+                {}
+            ).addTo(map_a3aff0626fd031f7b70450425df92de9);
+        
+    
+            var icon_4315a93ba13f1d6c96c4736470d0b01b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1fcdccd0e839ce97273b096b7e6a23fc.setIcon(icon_4315a93ba13f1d6c96c4736470d0b01b);
+        
+    
+        var popup_fcc3164888bd34820bcea5b5f9b97384 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14aadc17de5318b3e0860d09c155b8b1 = $(`<div id="html_14aadc17de5318b3e0860d09c155b8b1" style="width: 100.0%; height: 100.0%;">Costa Rica (Type: greenest - Area: 51060 acres)</div>`)[0];
+                popup_fcc3164888bd34820bcea5b5f9b97384.setContent(html_14aadc17de5318b3e0860d09c155b8b1);
+            
+        
+
+        marker_1fcdccd0e839ce97273b096b7e6a23fc.bindPopup(popup_fcc3164888bd34820bcea5b5f9b97384)
+        ;
+
+        
+    
+</script>
+</html>
