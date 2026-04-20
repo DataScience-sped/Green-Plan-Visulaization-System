@@ -33,7 +33,7 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 ```
 
 ## ⚙️ How It Works
-1. ## 📊 Dataset Fields
+1. ## 📊 Dataset Fields 
 - Name
 - Area (in acres)
 - Latitude
