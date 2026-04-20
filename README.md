@@ -29,8 +29,7 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 ├── README.md
 ├── templates/
     ├── index.html         # Homepage with search & filters
-├── output/
-    ├── map.html           # Generated map file
+    ├── map.html           # Generated map file             
 ```
 
 ## ⚙️ How It Works
