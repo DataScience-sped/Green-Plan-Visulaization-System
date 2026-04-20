@@ -33,13 +33,12 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 ```
 
 ## ⚙️ How It Works
-1. Dataset (places.xlsx)
-   *It have
-   *Name
-   *Area
-   *Latitude
-   *Longitude
-   *Type
+1. ## 📊 Dataset Fields
+- Name
+- Area (in acres)
+- Latitude
+- Longitude
+- Type (e.g., greenest, hottest, coldest)
 2. Flask Backend:
    * `/` → Loads homepage
    * `/map` → Generates and displays map using Folium
