@@ -80,10 +80,3 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 * Environmental data analysis
 * Travel and location-based applications
 * Data analytics portfolio project
-
-## 🔮 Future Improvements
-* Add real-time API data
-* Improve UI with dashboards (charts/graphs)
-* Add user authentication
-* Deploy on cloud (Heroku/AWS)
-* Add clustering for better visualization
