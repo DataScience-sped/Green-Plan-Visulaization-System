@@ -1,1 +1,66 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Places Around the World</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Visit Various Places Around the World!</h1>
+    <div style="text-align: center;">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search for a place...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="results" style="text-align: center;"></div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="/map">View All Places on Map</a>
+        <br><br>
+        <h3>Select Type of Place:</h3>
+        <button onclick="viewType('greenest')">Greenest Places</button>
+        <button onclick="viewType('hottest')">Hottest Places</button>
+        <button onclick="viewType('coldest')">Coldest Places</button>
+        <button onclick="viewType('driest')">Driest Places</button>
+        <button onclick="viewType('wettest')">Wettest Places</button>
+        <button onclick="viewType('cleanest')">Cleanest Places</button>
+        <button onclick="viewType('dirtiest')">Dirtiest Places</button>
+        <button onclick="viewType('largest')">Largest Places</button>
+        <button onclick="viewType('smallest')">Smallest Places</button>
+    </div>
+    <script>
+        document.getElementById('searchForm').onsubmit = function(event) {
+            event.preventDefault();
+            const query = document.getElementById('searchInput').value;
+            fetch(`/search?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    const resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = '';  // Clear previous results
+                    if (data.length > 0) {
+                        data.forEach(place => {
+                            resultsDiv.innerHTML += `<p>${place.name} - Type: ${place.type} - Area: ${place.area} acres</p>`;
+                        });
+                    } else {
+                        resultsDiv.innerHTML = '<p>No results found.</p>';
+                    }
+                });
+        };
+        function viewType(type) {
+            fetch(`/view_type?type=${type}`)
+                .then(response => response.json())
+                .then(data => {
+                    const resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = '';  // Clear previous results
+                    if (data.length > 0) {
+                        data.forEach(place => {
+                            resultsDiv.innerHTML += `<p>${place.name} - Type: ${place.type} - Area: ${place.area} acres</p>`;
+                        });
+                    } else {
+                        resultsDiv.innerHTML = '<p>No results found for this type.</p>';
+                    }
+                });
+        }
+    </script>
+</body>
+</html>
