@@ -24,10 +24,12 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 
 ## 📂 Project Structure
 ```
-├── greenest.py            # Main Flask application
+├── app.py                 # Main Flask application
+├── README.md
 ├── templates/
-│   ├── index.html         # Homepage with search & filters
-│   ├── map.html           # Generated map file
+    ├── index.html         # Homepage with search & filters
+├── output/
+    ├── map.html           # Generated map file
 ```
 
 ## ⚙️ How It Works
