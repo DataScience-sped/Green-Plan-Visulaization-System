@@ -23,10 +23,12 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 * JavaScript
 
 ## 📂 Project Structure
+'''
 ├── greenest.py            # Main Flask application
 ├── templates/
 │   ├── index.html         # Homepage with search & filters
 │   ├── map.html           # Generated map file
+'''
 
 ## ⚙️ How It Works
 1. The dataset (`places.xlsx`) contains:
