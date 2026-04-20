@@ -34,16 +34,23 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 ```
 
 ## ⚙️ How It Works
-1. Flask Backend:
+1. Dataset (places.xlsx)
+   It have
+   Name
+   Area
+   Latitude
+   Longitude
+   Type
+2. Flask Backend:
    * `/` → Loads homepage
    * `/map` → Generates and displays map using Folium
    * `/search` → Returns search results (API)
    * `/view_type` → Filters places by type (API)
-2. Map Generation:
+3. Map Generation:
    * Markers are added dynamically
    * Colors represent different categories
    * Popups display place details
-3. Frontend:
+4. Frontend:
    * Users can search places
    * Filter by type using buttons
    * View results instantly without reloading
