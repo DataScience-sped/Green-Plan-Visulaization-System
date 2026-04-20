@@ -54,7 +54,7 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
    ```
 2. Run the Flask app:
    ```bash
-   python greenest.py
+   python app.py
    ```
 3. Open browser:
    ```
