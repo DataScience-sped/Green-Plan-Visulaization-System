@@ -25,6 +25,7 @@ The system integrates **Flask (backend)**, **Folium (map visualization)**, and *
 ## 📂 Project Structure
 ```
 ├── app.py                 # Main Flask application
+├── places.xlsx
 ├── README.md
 ├── templates/
     ├── index.html         # Homepage with search & filters
